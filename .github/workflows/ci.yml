@@ -2,7 +2,7 @@ name: CI
 on:
   push:
   pull_request:
-  
+
   jobs:
     qualidade:
       runs-on: ubuntu-latest
@@ -15,6 +15,6 @@ on:
           with:
             java-version: '17'
             distribution: 'temurin'
-	
+
         - name: Executar testes
           run: mvn test
